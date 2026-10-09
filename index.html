@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b101d">
+  <title>AutoCare Garage — Precision Vehicle Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav wrap">
+      <a href="#home" class="logo" aria-label="AutoCare Garage home">
+        <span class="logo-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 25h24l-3-9a3 3 0 0 0-3-2H14a3 3 0 0 0-3 2l-3 9Z"/><path d="M6 25v6h4v-3h20v3h4v-6M12 20h16M14 14l-2-4m14 4 2-4"/><circle cx="13" cy="25" r="2"/><circle cx="27" cy="25" r="2"/></svg></span>
+        <span class="logo-type">AUTOCARE <b>GARAGE</b><small>PRECISION VEHICLE CARE</small></span>
+      </a>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#book">Book Appointment</a><a href="#track">Track Booking</a><a href="#contact">Contact</a>
+        <a class="nav-phone" href="tel:+919876543210">↗ +91 98765 43210</a><button class="btn btn-small" data-scroll="book">Book a slot <span>↗</span></button>
+        <button class="admin-link" id="openAdmin">Admin portal ↗</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="customerApp">
+    <section class="hero" id="home">
+      <div class="hero-photo"></div><div class="hero-shade"></div><div class="hero-gridline"></div>
+      <div class="wrap hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="live-dot"></span> Precision. Performance. Peace of mind.</p>
+          <h1 class="hero-title"><span class="mask-line"><span>PRECISION</span></span><span class="mask-line"><span>AUTOMOTIVE</span></span><span class="mask-line accent-line"><span>ENGINEERING<span class="period">.</span></span></span><span class="mask-line"><span class="outline-text">& SERVICE</span></span></h1>
+          <p class="hero-desc reveal delay-4">Certified master technicians. Factory-level diagnostics. A better standard of care for every vehicle that enters our workshop.</p>
+          <div class="hero-actions reveal delay-5"><button class="btn" data-scroll="book">Book appointment now <span>↗</span></button><button class="btn btn-ghost" data-scroll="track"><span class="play-ring">▶</span> Track existing booking</button></div>
+          <div class="hero-stats reveal delay-6"><div><strong>4.9<span>/5</span></strong><small>Customer rating</small></div><div><strong>25K<span>+</span></strong><small>Vehicles serviced</small></div><div><strong>12<span>+</span></strong><small>Master technicians</small></div></div>
+        </div>
+        <div class="hero-side reveal delay-5"><div class="side-tag">WORKSHOP STANDARD <span>01 / 04</span></div><div class="vertical-label">BUILT ON PRECISION</div><div class="hero-side-bottom"><span class="side-line"></span><span>ANDHERI EAST · MUMBAI</span></div></div>
+      </div>
+      <a class="scroll-cue" href="#services"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <div class="marquee"><div class="marquee-track"><span>GENERAL SERVICING <i>◆</i> ENGINE DIAGNOSTICS <i>◆</i> SYNTHETIC OIL CHANGE <i>◆</i> BRAKE & CLUTCH <i>◆</i> AC SERVICE <i>◆</i> TYRE CARE <i>◆</i> BATTERY CHECK <i>◆</i> DETAILING <i>◆</i></span><span aria-hidden="true">GENERAL SERVICING <i>◆</i> ENGINE DIAGNOSTICS <i>◆</i> SYNTHETIC OIL CHANGE <i>◆</i> BRAKE & CLUTCH <i>◆</i> AC SERVICE <i>◆</i> TYRE CARE <i>◆</i> BATTERY CHECK <i>◆</i> DETAILING <i>◆</i></span></div></div>
+
+    <section class="section wrap" id="services">
+      <div class="section-head reveal"><div><p class="eyebrow">01 — WHAT WE DO</p><h2>ENGINEERED FOR<br><span class="accent">EVERY JOURNEY.</span></h2></div><p class="section-intro">From everyday maintenance to complex diagnostics, our team delivers precision-led care without the dealership price tag.</p></div>
+      <div class="service-grid" id="serviceGrid"></div>
+      <div class="section-foot reveal"><span class="mono">THE RIGHT CARE. THE RIGHT WAY.</span><button class="text-link" data-scroll="book">Find your service <span>↗</span></button></div>
+    </section>
+
+    <section class="booking-section" id="book"><div class="wrap booking-layout">
+      <div class="booking-aside"><p class="eyebrow reveal">02 — YOUR APPOINTMENT</p><h2 class="reveal">RESERVE YOUR<br><span class="accent">SERVICE SLOT.</span></h2><p class="aside-copy reveal">Tell us about you and your vehicle, select the service you need, and choose a time that works for you. We’ll call to confirm.</p>
+        <ul class="perks reveal"><li><span>✓</span> Free 40-point inspection</li><li><span>✓</span> No advance payment needed</li><li><span>✓</span> Genuine parts, itemised invoice</li></ul>
+        <div class="aside-note reveal"><span class="note-icon">✳</span><div><b>GOOD TO KNOW</b><p>Appointment requests are reviewed by our service team. Your slot is confirmed after we contact you.</p></div></div>
+      </div>
+      <div class="booking-card reveal">
+        <div class="wizard-top"><div><p class="eyebrow">BOOKING REQUEST</p><h3 id="wizardTitle">Tell us about yourself.</h3></div><span class="step-counter"><b id="stepNumber">01</b> / 04</span></div>
+        <div class="progress"><span id="progressBar"></span></div>
+        <form id="bookingForm" novalidate>
+          <div class="wizard-step active" data-step="0">
+            <div class="form-grid"><div class="field full"><label for="fullName">FULL NAME <em>*</em></label><input id="fullName" name="name" placeholder="e.g. Gurpinder Singh" autocomplete="name"><small class="error"></small></div>
+            <div class="field"><label for="phone">MOBILE NUMBER <em>*</em></label><input id="phone" name="phone" inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel"><small class="error"></small></div>
+            <div class="field"><label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email"><small class="error"></small></div></div>
+          </div>
+          <div class="wizard-step" data-step="1">
+            <div class="form-grid"><div class="field"><label for="make">VEHICLE MAKE <em>*</em></label><input id="make" placeholder="e.g. Hyundai"><small class="error"></small></div><div class="field"><label for="model">VEHICLE MODEL <em>*</em></label><input id="model" placeholder="e.g. Creta SX"><small class="error"></small></div>
+            <div class="field"><label for="regNumber">REGISTRATION NUMBER <em>*</em></label><input id="regNumber" placeholder="e.g. PB10AB1234"><small class="error"></small></div><div class="field"><label for="vehicleType">VEHICLE TYPE <em>*</em></label><select id="vehicleType"><option value="">Select type</option><option>Hatchback</option><option>Sedan</option><option>SUV</option><option>MUV</option><option>Luxury</option><option>Bike / Scooter</option><option>Other</option></select><small class="error"></small></div></div>
+          </div>
+          <div class="wizard-step" data-step="2">
+            <div class="field"><label for="serviceSelect">SELECT A SERVICE <em>*</em></label><select id="serviceSelect"><option value="">Choose a service</option></select><small class="error"></small></div>
+            <div class="form-grid"><div class="field"><label for="appointmentDate">PREFERRED DATE <em>*</em></label><input type="date" id="appointmentDate"><small class="error"></small></div><div class="field"><label for="timeSlot">AVAILABLE TIME SLOT <em>*</em></label><select id="timeSlot"><option value="">Choose time</option><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>02:00 PM</option><option>03:00 PM</option><option>04:00 PM</option><option>05:00 PM</option></select><small class="error"></small></div></div>
+            <div class="field"><label for="issue">WHAT NEEDS ATTENTION? (OPTIONAL)</label><textarea id="issue" rows="3" placeholder="Tell us about any symptoms, warning lights or concerns..."></textarea></div>
+            <div class="slot-note" id="slotNote">Select a date to check slot availability.</div>
+          </div>
+          <div class="wizard-step" data-step="3">
+            <div class="review-box" id="bookingReview"></div><label class="checkline"><input type="checkbox" id="confirmDetails"><span>I confirm that the details above are correct.</span></label><small class="error" id="confirmError"></small>
+          </div>
+          <div class="form-actions"><button type="button" class="btn btn-ghost" id="prevStep" hidden>← Back</button><span class="action-spacer"></span><button type="button" class="btn" id="nextStep">Continue <span>→</span></button><button type="submit" class="btn" id="submitBooking" hidden>Confirm booking <span>↗</span></button></div>
+        </form>
+        <div class="booking-success" id="bookingSuccess" hidden></div>
+        <p class="secure-note">⌑ &nbsp; YOUR DETAILS STAY IN THIS BROWSER IN THIS DEMO.</p>
+      </div>
+    </div></section>
+
+    <section class="track-section section" id="track"><div class="wrap track-layout">
+      <div class="track-copy reveal"><p class="eyebrow">03 — REAL-TIME CLARITY</p><h2>YOUR VEHICLE.<br><span class="accent">YOUR PEACE OF MIND.</span></h2><p>Keep up with your service request from the moment it’s booked to the moment it’s ready for pickup.</p><div class="track-decor"><span>ACG / SERVICE STATUS</span><b>TRANSPARENCY IS STANDARD.</b></div></div>
+      <div class="track-card reveal"><div class="card-head"><div><p class="eyebrow">BOOKING LOOKUP</p><h3>Where’s my car?</h3></div><span class="search-symbol">⌕</span></div><p class="muted">Enter your booking ID and the mobile number used when booking.</p>
+        <form id="trackForm"><div class="field"><label for="trackId">BOOKING ID</label><input id="trackId" placeholder="ACG-1234"></div><div class="field"><label for="trackPhone">MOBILE NUMBER</label><input id="trackPhone" maxlength="10" inputmode="numeric" placeholder="10-digit mobile number"></div><button class="btn full-btn" type="submit">Find my booking <span>↗</span></button></form><div id="trackResult"></div>
+      </div>
+    </div></section>
+
+    <section class="section wrap" id="why"><div class="section-head reveal"><div><p class="eyebrow">04 — THE AUTOCARE DIFFERENCE</p><h2>THE GARAGE THAT<br><span class="accent">TREATS YOU LIKE A PRO.</span></h2></div><p class="section-intro">From routine maintenance to a full engine overhaul, your vehicle gets dealer-grade attention at garage-honest prices.</p></div>
+      <div class="why-grid"><article class="why-card reveal"><span>01</span><div class="why-icon">✦</div><h3>MASTER TECHNICIANS</h3><p>Experienced specialists who know your vehicle inside and out, backed by precision tools and proven processes.</p></article><article class="why-card reveal"><span>02</span><div class="why-icon">⌁</div><h3>DIGITAL INSPECTION REPORTS</h3><p>Clear updates and inspection details before work begins. No guesswork, no unnecessary surprises.</p></article><article class="why-card reveal"><span>03</span><div class="why-icon">⚙</div><h3>GENUINE QUALITY PARTS</h3><p>Quality components selected for fit, reliability and long-term performance.</p></article><article class="why-card reveal"><span>04</span><div class="why-icon">▤</div><h3>TRANSPARENT PRICING</h3><p>Upfront estimates and itemised invoices. You stay in control at every step.</p></article></div>
+      <div class="return-banner reveal"><strong>98<span>%</span></strong><p>of our customers return for their next service — and refer a friend.</p><span class="banner-mark">AC / 98</span></div>
+    </section>
+
+    <section class="contact-section section" id="contact"><div class="wrap contact-grid">
+      <div class="hours-card reveal"><div class="contact-card-head"><h3>◷ &nbsp; WORKING HOURS</h3><span class="open-badge" id="openBadge"><i></i> Checking...</span></div><div class="hours-row"><span>Monday – Friday</span><b>7:30 AM – 6:30 PM</b></div><div class="hours-row"><span>Saturday</span><b>8:00 AM – 4:00 PM</b></div><div class="hours-row"><span>Sunday</span><b class="muted">Closed</b></div><div class="contact-image"><img src="https://images.unsplash.com/photo-1786489623043-fb024ae22e82?auto=format&fit=crop&w=1200&q=85" alt="Professional automotive workshop" loading="lazy"><div><span>VISIT OUR WORKSHOP</span><b>Precision in every detail.</b></div></div></div>
+      <div class="contact-info reveal"><p class="eyebrow">05 — FIND US</p><h2>LET’S GET YOU<br><span class="accent">BACK ON THE ROAD.</span></h2><p class="section-intro">Have a question before booking? Our team is here to help you find the right service for your vehicle.</p><a href="tel:+919876543210" class="contact-item"><span>↗</span><div><small>CALL OUR SERVICE DESK</small><b>+91 98765 43210</b></div></a><a href="mailto:care@autocargarage.in" class="contact-item"><span>✉</span><div><small>EMAIL US</small><b>care@autocargarage.in</b></div></a><div class="contact-item"><span>⌖</span><div><small>WORKSHOP ADDRESS</small><b>Plot 14, Service Road, Andheri East, Mumbai 400093</b></div></div><button class="btn" data-scroll="book">Make an appointment <span>↗</span></button></div>
+    </div></section>
+
+    <section class="reviews section wrap" id="reviews"><div class="section-head reveal"><div><p class="eyebrow">06 — CLIENT STORIES</p><h2>WORD OF MOUTH,<br><span class="accent">IN WRITING.</span></h2></div><p class="section-intro">Great work speaks for itself. Here’s what drivers say about their AutoCare experience.</p></div><div class="review-grid"><figure class="review-card reveal"><div class="stars">★★★★★</div><blockquote>“AutoCare handled my brake upgrade flawlessly. The real-time tracking gave me complete peace of mind.”</blockquote><figcaption><b>Marcus Vance</b><small>Porsche 911 GT3</small></figcaption></figure><figure class="review-card reveal"><div class="stars">★★★★★</div><blockquote>“Their diagnostic scan pinpointed an elusive misfire in 20 minutes. Exceptional professionalism end to end.”</blockquote><figcaption><b>Elena Rostova</b><small>Audi RS6 Avant</small></figcaption></figure><figure class="review-card reveal"><div class="stars">★★★★★</div><blockquote>“Clean bays, clear pricing and an immaculate detailing job. Easily the best workshop I have used.”</blockquote><figcaption><b>David Sterling</b><small>BMW M5 Competition</small></figcaption></figure></div></section>
+  </main>
+
+  <section class="admin-app" id="adminApp" hidden>
+    <aside class="admin-sidebar"><a href="#" class="logo admin-logo" id="adminHome"><span class="logo-mark">AC</span><span class="logo-type">AUTOCARE <b>GARAGE</b><small>CONTROL ROOM</small></span></a><p class="side-label">WORKSPACE</p><button class="side-nav active" data-view="overview">▦ <span>Overview</span></button><button class="side-nav" data-view="bookings">▤ <span>All bookings</span><b id="pendingBadge">0</b></button><button class="side-nav" data-view="calendar">▦ <span>Calendar view</span></button><button class="side-nav" data-view="services">⚙ <span>Services</span></button><button class="side-nav" data-view="settings">☷ <span>Settings</span></button><div class="sidebar-bottom"><span class="live-dot"></span><span>LOCAL DEMO MODE</span><button id="backToSite">↗ View website</button></div></aside>
+    <div class="admin-main"><header class="admin-topbar"><div><p class="eyebrow">AUTOCARE / ADMIN</p><h1 id="adminTitle">Overview</h1></div><div class="admin-top-actions"><button class="icon-btn" id="notificationsBtn" aria-label="Notifications">♧ <b id="notificationBadge">0</b></button><span class="admin-avatar">AC</span></div></header>
+      <div class="notification-panel" id="notificationPanel" hidden><div class="notification-head"><b>Recent activity</b><button id="clearNotifications">Clear all</button></div><div id="notificationList"></div></div>
+      <div class="admin-content" id="adminContent"></div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="wrap footer-top"><a href="#home" class="logo"><span class="logo-mark"><svg viewBox="0 0 40 40"><path d="M8 25h24l-3-9a3 3 0 0 0-3-2H14a3 3 0 0 0-3 2l-3 9Z"/><path d="M6 25v6h4v-3h20v3h4v-6M12 20h16"/><circle cx="13" cy="25" r="2"/><circle cx="27" cy="25" r="2"/></svg></span><span class="logo-type">AUTOCARE <b>GARAGE</b><small>PRECISION VEHICLE CARE</small></span></a><p>PRECISION ENGINEERING. HUMAN SERVICE.</p><button class="admin-link" id="footerAdmin">Admin dashboard ↗</button></div><div class="wrap footer-bottom"><span>© <span id="year"></span> AutoCare Garage. All rights reserved.</span><span>DEMO BUILD — DATA STAYS IN YOUR BROWSER.</span></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
