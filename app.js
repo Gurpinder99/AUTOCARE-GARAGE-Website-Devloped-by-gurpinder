@@ -19,7 +19,7 @@
     {id:"svc-battery",icon:"▣",name:"Battery Service",description:"Battery health test, terminal cleaning and charging system inspection.",price:799,duration:"30 mins",enabled:true},
     {id:"svc-detailing",icon:"✦",name:"Car Wash & Detailing",description:"Foam wash, interior deep vacuum, polish and a showroom finish.",price:499,duration:"2 hrs",enabled:true}
   ];
-  const defaultSettings = {garageName:"AutoCare Garage",phone:"+91 98765 43210",email:"care@autocargarage.in",address:"Plot 14, Service Road, Andheri East, Mumbai 400093",weekdays:"7:30 AM – 6:30 PM",saturday:"8:00 AM – 4:00 PM",sunday:"Closed"};
+  const defaultSettings = {garageName:"AutoCare Garage",phone:"+91 81469 69391",email:"gurafix.creative@gmail.com",address:"Plot 14, Service Road, Andheri East, Mumbai 400093",weekdays:"7:30 AM – 6:30 PM",saturday:"8:00 AM – 4:00 PM",sunday:"Closed"};
   let services = read(KEY.services, serviceDefaults);
   let bookings = read(KEY.bookings, []);
   let notifications = read(KEY.notifications, []);
